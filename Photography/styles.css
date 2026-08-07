@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+:root {
+    --color-darkblue: #000080;
+    --color-lightblue: #0080fe;
+    --color-darkred: #7c0a02;
+    --color-lightred: #ff2800;
+}
+
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 10px;
+    margin: 5px;
+    margin-bottom: 100px;
+}
+
+
+#landscape figure {
+    position: relative;
+    top: -250px;
+    border: 1px solid black;
+}
+
+#landscape h2 {
+    position: relative;
+    top: 20px;
+    grid-column: 1 / span 2;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: #472;
+}
+
+#navbar {
+    text-align: center;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to left, var(--color-lightblue), var(--color-darkblue), var(--color-darkred), var(--color-lightred));
+
+}
+
+
+#navbar a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+}
+
+figcaption {
+    text-align: center;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.ls1 figcaption {
+    background: linear-gradient(skyblue, forestgreen);
+}
+
+.ls2 figcaption {
+    background: linear-gradient(darkorange 50%, darkgrey);
+}
+
+.ls3 figcaption {
+    background: linear-gradient(#a3aabe, #2e8b57);
+}
+
+.ls4 figcaption {
+    background: linear-gradient(skyblue, #29ab87);
+}
+
+#portrait h2 {
+    grid-column: 1 / span 2;
+    position: relative;
+    top: 120px;
+}
+
+#portrait {
+    position: relative;
+    top: -370px;
+}
+
+#portrait figure figcaption {
+    border-radius: 20px;
+    background-color: navajowhite;
+}
+
+#abstract h2 {
+    grid-column: 1 / span 2;
+    position: relative;
+    top: 170px;
+}
+
+#abstract {
+    position: relative;
+    top: -490px;
+}
+
+.a1 figcaption {
+    background: radial-gradient(circle, darkgray, royalblue, navy 95%);
+}
+
+.a2 figcaption {
+    background: radial-gradient(circle, pink, violet, purple 95%);
+}
+
+.a3 figcaption {
+    background: radial-gradient(circle, yellow, red, blue 95%);
+}
+
+.a4 figcaption {
+    background: radial-gradient(circle, cyan, orange, pink);
+}
+
+footer {
+    margin-top: -450px;
+    text-align: center;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    background-color: skyblue;
+}
+
+footer p {
+    text-align: left;
+    margin: 5px 10px;
+}
+
+.ls-border {
+    border: 2px dotted black;
+    position: relative;
+    top: 70px;
+    z-index: 1;
+}
+
+.p-border {
+    border: 2px dotted black;
+    position: relative;
+    top: -195px;
+    z-index: 1;
+}
+
+.a-border {
+    border: 2px dotted black;
+    position: relative;
+    top: -260px;
+    z-index: 1;
+}
+
+.about-border {
+    border: 2px dotted black;
+    position: relative;
+    top: -500px;
+    z-index: 1;
+}
